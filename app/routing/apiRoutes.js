@@ -11,9 +11,10 @@ module.exports = function (app) {
         var newFriend = req.body;
         var lowest = 999;
         var match;
+        friends.push(req.body);
 
         console.log(newFriend);
-        for (var i = 0; i < friends.length; i++) {
+        for (var i = 0; i < friends.length-1; i++) {
             var checkDiff = 0;
             // Check score differences
             for (var j = 0; j < friends[i].scores.length; j++) {
@@ -28,7 +29,6 @@ module.exports = function (app) {
                 match = i;
             }
         }
-
         res.json(friends[match]);
     });
 }
