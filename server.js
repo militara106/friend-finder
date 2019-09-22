@@ -6,14 +6,9 @@ var PORT = process.env.PORT || 8080;
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
-// Connection Test
-connection.connect(function (err) {
-    if (err) throw err;
-    console.log("Connected: " + connection.threadId);
-})
-
 // Router
-
+require("./app/routing/apiRoutes.js")(app);
+require("./app/routing/htmlRoutes.js")(app);
 
 // Servet Listener
 app.listen(PORT, function () {

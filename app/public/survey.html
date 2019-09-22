@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Friend Finder Survey</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1><i class="fa fa-facebook-square" aria-hidden="true"></i> Friend Finder</h1>
+            <hr>
+            <h2>Answer a few basic questions. </h2>
+            <h2>Then find the friend with the greatest compatibility!</h2>
+            <br>
+
+            <div class="text-center">
+                <a href="/"><button class="btn btn-lg btn-primary">
+                        <h4> Home</h4>
+                    </button></a>
+            </div>
+
+        </div>
+        <form>
+            <!-- Name -->
+            <div class="form-group">
+                <label for="name">Name</label>
+                <textarea class="form-control" id="name" rows="1"></textarea>
+            </div>
+
+            <!-- Pic -->
+            <div class="form-group">
+                <label for="pic">Picture Link</label>
+                <textarea class="form-control" id="photo" rows="1"></textarea>
+            </div>
+
+            <!-- Questions -->
+            <div class="form-group">
+
+                <!-- q1 -->
+                <label for="q1">Question 1</label>
+                <select class="form-control" id="q1">
+                    <option>5 (Strongly Agree)</option>
+                    <option>4</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option>1 (Strongly Disagree)</option>
+                </select>
+
+                <!-- q2 -->
+                <label for="q2">Question 2</label>
+                <select class="form-control" id="q2">
+                    <option>5 (Strongly Agree)</option>
+                    <option>4</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option>1 (Strongly Disagree)</option>
+                </select>
+
+                <!-- q3 -->
+                <label for="q3">Question 3</label>
+                <select class="form-control" id="q3">
+                    <option>5 (Strongly Agree)</option>
+                    <option>4</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option>1 (Strongly Disagree)</option>
+                </select>
+
+                <!-- q4 -->
+                <label for="q4">Question 4</label>
+                <select class="form-control" id="q4">
+                    <option>5 (Strongly Agree)</option>
+                    <option>4</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option>1 (Strongly Disagree)</option>
+                </select>
+
+                <!-- Q5 -->
+                <label for="q5">Question 5</label>
+                <select class="form-control" id="q5">
+                    <option>5 (Strongly Agree)</option>
+                    <option>4</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option>1 (Strongly Disagree)</option>
+                </select>
+
+                <!-- Q6 -->
+                <label for="q6">Question 6</label>
+                <select class="form-control" id="q6">
+                    <option>5 (Strongly Agree)</option>
+                    <option>4</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option>1 (Strongly Disagree)</option>
+                </select>
+
+                <!-- Q7 -->
+                <label for="q7">Question 7</label>
+                <select class="form-control" id="q7">
+                    <option>5 (Strongly Agree)</option>
+                    <option>4</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option>1 (Strongly Disagree)</option>
+                </select>
+
+                <!-- Q8 -->
+                <label for="q2">Question 8</label>
+                <select class="form-control" id="q8">
+                    <option>5 (Strongly Agree)</option>
+                    <option>4</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option>1 (Strongly Disagree)</option>
+                </select>
+
+                <!-- Q9 -->
+                <label for="q9">Question 9</label>
+                <select class="form-control" id="q9">
+                    <option>5 (Strongly Agree)</option>
+                    <option>4</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option>1 (Strongly Disagree)</option>
+                </select>
+
+                <!-- Q10 -->
+                <label for="q10">Question 10</label>
+                <select class="form-control" id="q10">
+                    <option>5 (Strongly Agree)</option>
+                    <option>4</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option>1 (Strongly Disagree)</option>
+                </select>
+
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <button type="submit" data-toggle="modal" data-target="#matchModal"
+                        class="btn btn-primary submit">Find a
+                        Friend</button>
+                </div>
+        </form>
+
+        <!-- Modal -->
+        <div class="modal fade" id="matchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Top Match</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="match">
+
+                        <!-- Match Info Goes Here -->
+                        <h3 id="matchName"></h3>
+                        <img src='' id="matchPhoto" title="matchPhoto" width="400em" height="400em">
+                        <!-- Match Info Above -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <p><a href="/api/friends">API Friends List</a> |
+                    <a href="https://github.com/militara106/friend-finder">GitHub Repo</a>
+            </div>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript">
+        $(".submit").on("click", function (event) {
+            event.preventDefault();
+            var scores = [];
+            for (var i = 0; i < 10; i++) {
+                var value = $("#q" + (i + 1)).val();
+                value = parseInt(value);
+                value = parseInt(value);
+                scores.push(value);
+            }
+
+            var newFriend = {
+                name: $("#name").val().trim(),
+                photo: $("#photo").val().trim(),
+                scores: scores
+            }
+            console.log("Name: " + newFriend.name + "\nPhoto: " + newFriend.photo)
+            console.log("Scores: " + newFriend.scores);
+
+
+            $.post("/api/friends", newFriend, function (data) {
+                console.log(data.name + " " + data.photo);
+                $("#matchName").text(data.name);
+                $("#matchPhoto").attr("src", data.photo);
+            })
+        });
+    </script>
+</body>
+
+</html>
